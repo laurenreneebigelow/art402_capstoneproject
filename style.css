@@ -1,0 +1,108 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 1em;
+  font-family: 'Muli', sans-serif;
+  background-color: #000000
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.whats {
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 300%;
+}
+
+.news {
+  font-size: 300%;
+}
+
+h2 {
+  color: white;
+}
+
+.whats-news {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  font-size: 200%;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.whats-news span {
+  display: inline-block;
+  padding-left: 0%;
+  animation: whats-news 20s linear;
+}
+
+@keyframes whats-news {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0px;
+  padding-top: 1em;
+}
+
+.title-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 0px;
+}
+
+
+.box {
+  padding: 0px;
+  font-size: 150%;
+}
+
+.second-video {
+   transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+.video-circle {
+clip-path: circle(170px at right);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.second-video-circle {
+clip-path: circle(170px at left);
+  transform: scaleY(-1);
+  -webkit-filter: opacity(.3);
+  filter: opacity(.3);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.parallax {
+  background-image: url("https://cdn.glitch.com/82e54c88-2f0f-4991-aecb-a807d4f9592e%2FFrame-08-10-2019-01-16-16.jpg?v=1570512021506");
+
+  width: 100%;
+
+  margin-top: 1em;
+  padding-bottom: 1em;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
